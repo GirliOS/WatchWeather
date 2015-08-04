@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5FD713A1B7092BD005C64AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD71391B7092BD005C64AD /* AppDelegate.swift */; };
+		F5FD713C1B7092BD005C64AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD713B1B7092BD005C64AD /* ViewController.swift */; };
+		F5FD713F1B7092BD005C64AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FD713D1B7092BD005C64AD /* Main.storyboard */; };
+		F5FD71411B7092BD005C64AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FD71401B7092BD005C64AD /* Assets.xcassets */; };
+		F5FD71441B7092BD005C64AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FD71421B7092BD005C64AD /* LaunchScreen.storyboard */; };
+		F5FD714F1B7092BD005C64AD /* WatchWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD714E1B7092BD005C64AD /* WatchWeatherTests.swift */; };
+		F5FD715A1B7092BD005C64AD /* WatchWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD71591B7092BD005C64AD /* WatchWeatherUITests.swift */; };
+		F5FD715F1B7092BD005C64AD /* WatchWeather WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F5FD715E1B7092BD005C64AD /* WatchWeather WatchKit App.app */; };
+		F5FD71651B7092BD005C64AD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FD71631B7092BD005C64AD /* Interface.storyboard */; };
+		F5FD71671B7092BD005C64AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FD71661B7092BD005C64AD /* Assets.xcassets */; };
+		F5FD716E1B7092BD005C64AD /* WatchWeather WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F5FD716D1B7092BD005C64AD /* WatchWeather WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F5FD71751B7092BD005C64AD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD71741B7092BD005C64AD /* InterfaceController.swift */; };
+		F5FD71771B7092BD005C64AD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD71761B7092BD005C64AD /* ExtensionDelegate.swift */; };
+		F5FD71791B7092BD005C64AD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD71781B7092BD005C64AD /* NotificationController.swift */; };
+		F5FD717B1B7092BD005C64AD /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD717A1B7092BD005C64AD /* GlanceController.swift */; };
+		F5FD717D1B7092BD005C64AD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD717C1B7092BD005C64AD /* ComplicationController.swift */; };
+		F5FD717F1B7092BD005C64AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FD717E1B7092BD005C64AD /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5FD714B1B7092BD005C64AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5FD712E1B7092BC005C64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FD71351B7092BD005C64AD;
+			remoteInfo = WatchWeather;
+		};
+		F5FD71561B7092BD005C64AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5FD712E1B7092BC005C64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FD71351B7092BD005C64AD;
+			remoteInfo = WatchWeather;
+		};
+		F5FD71601B7092BD005C64AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5FD712E1B7092BC005C64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FD715D1B7092BD005C64AD;
+			remoteInfo = "WatchWeather WatchKit App";
+		};
+		F5FD716F1B7092BD005C64AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5FD712E1B7092BC005C64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FD716C1B7092BD005C64AD;
+			remoteInfo = "WatchWeather WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5FD71861B7092BD005C64AD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F5FD716E1B7092BD005C64AD /* WatchWeather WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD718A1B7092BD005C64AD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F5FD715F1B7092BD005C64AD /* WatchWeather WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F5FD71361B7092BD005C64AD /* WatchWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FD71391B7092BD005C64AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5FD713B1B7092BD005C64AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5FD713E1B7092BD005C64AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5FD71401B7092BD005C64AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5FD71431B7092BD005C64AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5FD71451B7092BD005C64AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FD714A1B7092BD005C64AD /* WatchWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FD714E1B7092BD005C64AD /* WatchWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWeatherTests.swift; sourceTree = "<group>"; };
+		F5FD71501B7092BD005C64AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FD71551B7092BD005C64AD /* WatchWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FD71591B7092BD005C64AD /* WatchWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWeatherUITests.swift; sourceTree = "<group>"; };
+		F5FD715B1B7092BD005C64AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FD715E1B7092BD005C64AD /* WatchWeather WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchWeather WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FD71641B7092BD005C64AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F5FD71661B7092BD005C64AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5FD71681B7092BD005C64AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FD716D1B7092BD005C64AD /* WatchWeather WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchWeather WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FD71731B7092BD005C64AD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F5FD71741B7092BD005C64AD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F5FD71761B7092BD005C64AD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F5FD71781B7092BD005C64AD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F5FD717A1B7092BD005C64AD /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		F5FD717C1B7092BD005C64AD /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F5FD717E1B7092BD005C64AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5FD71801B7092BD005C64AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5FD71331B7092BD005C64AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD71471B7092BD005C64AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD71521B7092BD005C64AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD716A1B7092BD005C64AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5FD712D1B7092BC005C64AD = {
+			isa = PBXGroup;
+			children = (
+				F5FD71381B7092BD005C64AD /* WatchWeather */,
+				F5FD714D1B7092BD005C64AD /* WatchWeatherTests */,
+				F5FD71581B7092BD005C64AD /* WatchWeatherUITests */,
+				F5FD71621B7092BD005C64AD /* WatchWeather WatchKit App */,
+				F5FD71711B7092BD005C64AD /* WatchWeather WatchKit Extension */,
+				F5FD71371B7092BD005C64AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5FD71371B7092BD005C64AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD71361B7092BD005C64AD /* WatchWeather.app */,
+				F5FD714A1B7092BD005C64AD /* WatchWeatherTests.xctest */,
+				F5FD71551B7092BD005C64AD /* WatchWeatherUITests.xctest */,
+				F5FD715E1B7092BD005C64AD /* WatchWeather WatchKit App.app */,
+				F5FD716D1B7092BD005C64AD /* WatchWeather WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5FD71381B7092BD005C64AD /* WatchWeather */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD71391B7092BD005C64AD /* AppDelegate.swift */,
+				F5FD713B1B7092BD005C64AD /* ViewController.swift */,
+				F5FD713D1B7092BD005C64AD /* Main.storyboard */,
+				F5FD71401B7092BD005C64AD /* Assets.xcassets */,
+				F5FD71421B7092BD005C64AD /* LaunchScreen.storyboard */,
+				F5FD71451B7092BD005C64AD /* Info.plist */,
+			);
+			path = WatchWeather;
+			sourceTree = "<group>";
+		};
+		F5FD714D1B7092BD005C64AD /* WatchWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD714E1B7092BD005C64AD /* WatchWeatherTests.swift */,
+				F5FD71501B7092BD005C64AD /* Info.plist */,
+			);
+			path = WatchWeatherTests;
+			sourceTree = "<group>";
+		};
+		F5FD71581B7092BD005C64AD /* WatchWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD71591B7092BD005C64AD /* WatchWeatherUITests.swift */,
+				F5FD715B1B7092BD005C64AD /* Info.plist */,
+			);
+			path = WatchWeatherUITests;
+			sourceTree = "<group>";
+		};
+		F5FD71621B7092BD005C64AD /* WatchWeather WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD71631B7092BD005C64AD /* Interface.storyboard */,
+				F5FD71661B7092BD005C64AD /* Assets.xcassets */,
+				F5FD71681B7092BD005C64AD /* Info.plist */,
+			);
+			path = "WatchWeather WatchKit App";
+			sourceTree = "<group>";
+		};
+		F5FD71711B7092BD005C64AD /* WatchWeather WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD71741B7092BD005C64AD /* InterfaceController.swift */,
+				F5FD71761B7092BD005C64AD /* ExtensionDelegate.swift */,
+				F5FD71781B7092BD005C64AD /* NotificationController.swift */,
+				F5FD717A1B7092BD005C64AD /* GlanceController.swift */,
+				F5FD717C1B7092BD005C64AD /* ComplicationController.swift */,
+				F5FD717E1B7092BD005C64AD /* Assets.xcassets */,
+				F5FD71801B7092BD005C64AD /* Info.plist */,
+				F5FD71721B7092BD005C64AD /* Supporting Files */,
+			);
+			path = "WatchWeather WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F5FD71721B7092BD005C64AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD71731B7092BD005C64AD /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5FD71351B7092BD005C64AD /* WatchWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FD718B1B7092BD005C64AD /* Build configuration list for PBXNativeTarget "WatchWeather" */;
+			buildPhases = (
+				F5FD71321B7092BD005C64AD /* Sources */,
+				F5FD71331B7092BD005C64AD /* Frameworks */,
+				F5FD71341B7092BD005C64AD /* Resources */,
+				F5FD718A1B7092BD005C64AD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FD71611B7092BD005C64AD /* PBXTargetDependency */,
+			);
+			name = WatchWeather;
+			productName = WatchWeather;
+			productReference = F5FD71361B7092BD005C64AD /* WatchWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5FD71491B7092BD005C64AD /* WatchWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FD718E1B7092BD005C64AD /* Build configuration list for PBXNativeTarget "WatchWeatherTests" */;
+			buildPhases = (
+				F5FD71461B7092BD005C64AD /* Sources */,
+				F5FD71471B7092BD005C64AD /* Frameworks */,
+				F5FD71481B7092BD005C64AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FD714C1B7092BD005C64AD /* PBXTargetDependency */,
+			);
+			name = WatchWeatherTests;
+			productName = WatchWeatherTests;
+			productReference = F5FD714A1B7092BD005C64AD /* WatchWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5FD71541B7092BD005C64AD /* WatchWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FD71911B7092BD005C64AD /* Build configuration list for PBXNativeTarget "WatchWeatherUITests" */;
+			buildPhases = (
+				F5FD71511B7092BD005C64AD /* Sources */,
+				F5FD71521B7092BD005C64AD /* Frameworks */,
+				F5FD71531B7092BD005C64AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FD71571B7092BD005C64AD /* PBXTargetDependency */,
+			);
+			name = WatchWeatherUITests;
+			productName = WatchWeatherUITests;
+			productReference = F5FD71551B7092BD005C64AD /* WatchWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F5FD715D1B7092BD005C64AD /* WatchWeather WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FD71871B7092BD005C64AD /* Build configuration list for PBXNativeTarget "WatchWeather WatchKit App" */;
+			buildPhases = (
+				F5FD715C1B7092BD005C64AD /* Resources */,
+				F5FD71861B7092BD005C64AD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FD71701B7092BD005C64AD /* PBXTargetDependency */,
+			);
+			name = "WatchWeather WatchKit App";
+			productName = "WatchWeather WatchKit App";
+			productReference = F5FD715E1B7092BD005C64AD /* WatchWeather WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F5FD716C1B7092BD005C64AD /* WatchWeather WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FD71831B7092BD005C64AD /* Build configuration list for PBXNativeTarget "WatchWeather WatchKit Extension" */;
+			buildPhases = (
+				F5FD71691B7092BD005C64AD /* Sources */,
+				F5FD716A1B7092BD005C64AD /* Frameworks */,
+				F5FD716B1B7092BD005C64AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchWeather WatchKit Extension";
+			productName = "WatchWeather WatchKit Extension";
+			productReference = F5FD716D1B7092BD005C64AD /* WatchWeather WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5FD712E1B7092BC005C64AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = GirliOS;
+				TargetAttributes = {
+					F5FD71351B7092BD005C64AD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					F5FD71491B7092BD005C64AD = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F5FD71351B7092BD005C64AD;
+					};
+					F5FD71541B7092BD005C64AD = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F5FD71351B7092BD005C64AD;
+					};
+					F5FD715D1B7092BD005C64AD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					F5FD716C1B7092BD005C64AD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = F5FD71311B7092BC005C64AD /* Build configuration list for PBXProject "WatchWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5FD712D1B7092BC005C64AD;
+			productRefGroup = F5FD71371B7092BD005C64AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5FD71351B7092BD005C64AD /* WatchWeather */,
+				F5FD71491B7092BD005C64AD /* WatchWeatherTests */,
+				F5FD71541B7092BD005C64AD /* WatchWeatherUITests */,
+				F5FD715D1B7092BD005C64AD /* WatchWeather WatchKit App */,
+				F5FD716C1B7092BD005C64AD /* WatchWeather WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5FD71341B7092BD005C64AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FD71441B7092BD005C64AD /* LaunchScreen.storyboard in Resources */,
+				F5FD71411B7092BD005C64AD /* Assets.xcassets in Resources */,
+				F5FD713F1B7092BD005C64AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD71481B7092BD005C64AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD71531B7092BD005C64AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD715C1B7092BD005C64AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FD71671B7092BD005C64AD /* Assets.xcassets in Resources */,
+				F5FD71651B7092BD005C64AD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD716B1B7092BD005C64AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FD717F1B7092BD005C64AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5FD71321B7092BD005C64AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FD713C1B7092BD005C64AD /* ViewController.swift in Sources */,
+				F5FD713A1B7092BD005C64AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD71461B7092BD005C64AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FD714F1B7092BD005C64AD /* WatchWeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD71511B7092BD005C64AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FD715A1B7092BD005C64AD /* WatchWeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FD71691B7092BD005C64AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FD71791B7092BD005C64AD /* NotificationController.swift in Sources */,
+				F5FD71771B7092BD005C64AD /* ExtensionDelegate.swift in Sources */,
+				F5FD717D1B7092BD005C64AD /* ComplicationController.swift in Sources */,
+				F5FD71751B7092BD005C64AD /* InterfaceController.swift in Sources */,
+				F5FD717B1B7092BD005C64AD /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5FD714C1B7092BD005C64AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5FD71351B7092BD005C64AD /* WatchWeather */;
+			targetProxy = F5FD714B1B7092BD005C64AD /* PBXContainerItemProxy */;
+		};
+		F5FD71571B7092BD005C64AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5FD71351B7092BD005C64AD /* WatchWeather */;
+			targetProxy = F5FD71561B7092BD005C64AD /* PBXContainerItemProxy */;
+		};
+		F5FD71611B7092BD005C64AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5FD715D1B7092BD005C64AD /* WatchWeather WatchKit App */;
+			targetProxy = F5FD71601B7092BD005C64AD /* PBXContainerItemProxy */;
+		};
+		F5FD71701B7092BD005C64AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5FD716C1B7092BD005C64AD /* WatchWeather WatchKit Extension */;
+			targetProxy = F5FD716F1B7092BD005C64AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5FD713D1B7092BD005C64AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5FD713E1B7092BD005C64AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5FD71421B7092BD005C64AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5FD71431B7092BD005C64AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F5FD71631B7092BD005C64AD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5FD71641B7092BD005C64AD /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5FD71811B7092BD005C64AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5FD71821B7092BD005C64AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5FD71841B7092BD005C64AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "WatchWeather WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.girlios.WatchWeather.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		F5FD71851B7092BD005C64AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "WatchWeather WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.girlios.WatchWeather.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		F5FD71881B7092BD005C64AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchWeather_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchWeather WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.girlios.WatchWeather.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		F5FD71891B7092BD005C64AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchWeather_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchWeather WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.girlios.WatchWeather.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		F5FD718C1B7092BD005C64AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.girlios.WatchWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5FD718D1B7092BD005C64AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.girlios.WatchWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5FD718F1B7092BD005C64AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WatchWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.girlios.WatchWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchWeather.app/WatchWeather";
+			};
+			name = Debug;
+		};
+		F5FD71901B7092BD005C64AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WatchWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.girlios.WatchWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchWeather.app/WatchWeather";
+			};
+			name = Release;
+		};
+		F5FD71921B7092BD005C64AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WatchWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.girlios.WatchWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WatchWeather;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F5FD71931B7092BD005C64AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WatchWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.girlios.WatchWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WatchWeather;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5FD71311B7092BC005C64AD /* Build configuration list for PBXProject "WatchWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FD71811B7092BD005C64AD /* Debug */,
+				F5FD71821B7092BD005C64AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FD71831B7092BD005C64AD /* Build configuration list for PBXNativeTarget "WatchWeather WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FD71841B7092BD005C64AD /* Debug */,
+				F5FD71851B7092BD005C64AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5FD71871B7092BD005C64AD /* Build configuration list for PBXNativeTarget "WatchWeather WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FD71881B7092BD005C64AD /* Debug */,
+				F5FD71891B7092BD005C64AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5FD718B1B7092BD005C64AD /* Build configuration list for PBXNativeTarget "WatchWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FD718C1B7092BD005C64AD /* Debug */,
+				F5FD718D1B7092BD005C64AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5FD718E1B7092BD005C64AD /* Build configuration list for PBXNativeTarget "WatchWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FD718F1B7092BD005C64AD /* Debug */,
+				F5FD71901B7092BD005C64AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5FD71911B7092BD005C64AD /* Build configuration list for PBXNativeTarget "WatchWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FD71921B7092BD005C64AD /* Debug */,
+				F5FD71931B7092BD005C64AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5FD712E1B7092BC005C64AD /* Project object */;
+}

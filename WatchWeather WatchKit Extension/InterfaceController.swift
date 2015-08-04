@@ -2,7 +2,7 @@
 //  InterfaceController.swift
 //  WatchWeather WatchKit Extension
 //
-//  Created by baijf on 8/4/15.
+//  Created by girlios on 8/4/15.
 //  Copyright © 2015 GirliOS. All rights reserved.
 //
 

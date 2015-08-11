@@ -12,7 +12,7 @@ import WatchWeatherKit
 
 class ViewController: UIPageViewController {
     
-    var data: [Day: Weather]?
+    var data = [Day: Weather]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,21 +24,21 @@ class ViewController: UIPageViewController {
         
         UIApplication.sharedApplication().networkActivityIndicatorVisible =  true
         
+
         WeatherClient.sharedClient.requestWeathers { (weather, error) -> Void in
-            
-            UIApplication.sharedApplication().networkActivityIndicatorVisible = false {
-                if error == nil && weather != nil {
-                    for w in weather! where w != nil {
-                        self.data[w!.day] = w
-                    }
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            if error == nil && weather != nil {
+                for w in weather! where w != nil {
                     
-                    let vc = self.weatherViewControllerForDay(.Today)
-                    self.setViewControllers([vc], direction: .Forword, animated: false, completion: nil)
-                } else {
-                    let alert = UIAlertController(title: "Error", message: error?.description  ?? "Unknown Error", preferredStyle: .Alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                    self.presentViewController(alert, animated: true, completion: nil)
+                    self.data[w!.day] = w
                 }
+                
+                let vc = self.weatherViewControllerForDay(.Today)
+                self.setViewControllers([vc], direction: .Forward, animated: false, completion: nil)
+            } else {
+                let alert = UIAlertController(title: "Error", message: error?.description ?? "Unknown Error", preferredStyle: .Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
             }
         }
         
@@ -54,7 +54,7 @@ class ViewController: UIPageViewController {
         
         let vc = storyboard?.instantiateViewControllerWithIdentifier("WeatherViewController") as! WeatherViewController
         let nav = UINavigationController(rootViewController: vc)
-        vc.weather = data?[day]
+        vc.weather = data[day]
         
         return nav
     }

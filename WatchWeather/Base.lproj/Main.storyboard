@@ -27,9 +27,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="PFZ-ff-9Fc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="eFq-lc-v9v">
-                                <rect key="frame" x="235" y="109" width="130" height="121"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最低" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWQ-ga-Qe1">
                                 <rect key="frame" x="430" y="450" width="54" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
@@ -54,14 +51,18 @@
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="eFq-lc-v9v">
+                                <rect key="frame" x="235" y="239" width="130" height="121"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eFq-lc-v9v" firstAttribute="centerX" secondItem="PFZ-ff-9Fc" secondAttribute="centerX" id="3Vl-PL-Mm4"/>
+                            <constraint firstItem="eFq-lc-v9v" firstAttribute="centerX" secondItem="PFZ-ff-9Fc" secondAttribute="centerX" id="7MM-0M-UGE"/>
                             <constraint firstItem="Zmt-yM-7wa" firstAttribute="leading" secondItem="uWQ-ga-Qe1" secondAttribute="trailing" constant="28" id="8OZ-P7-U00"/>
                             <constraint firstItem="PFZ-ff-9Fc" firstAttribute="top" secondItem="GeX-7p-AUb" secondAttribute="top" id="Bpf-K4-xUd"/>
                             <constraint firstItem="Y8I-Cv-WJm" firstAttribute="leading" secondItem="22S-vv-mMW" secondAttribute="trailing" constant="24" id="GB0-CR-Ue0"/>
                             <constraint firstItem="0a1-27-wen" firstAttribute="top" secondItem="PFZ-ff-9Fc" secondAttribute="bottom" id="GIY-VV-rni"/>
+                            <constraint firstItem="PFZ-ff-9Fc" firstAttribute="top" secondItem="eFq-lc-v9v" secondAttribute="bottom" constant="-360" id="HFl-zR-d26"/>
                             <constraint firstItem="0a1-27-wen" firstAttribute="top" secondItem="Y8I-Cv-WJm" secondAttribute="bottom" constant="61" id="HNd-zT-3yw"/>
                             <constraint firstItem="PFZ-ff-9Fc" firstAttribute="leading" secondItem="GeX-7p-AUb" secondAttribute="leading" id="NLp-KB-CXC"/>
                             <constraint firstAttribute="trailing" secondItem="PFZ-ff-9Fc" secondAttribute="trailing" id="OnB-61-BlI"/>
@@ -69,7 +70,6 @@
                             <constraint firstAttribute="trailing" secondItem="Y8I-Cv-WJm" secondAttribute="trailing" constant="20" id="bL4-Rd-FnK"/>
                             <constraint firstAttribute="trailing" secondItem="PFZ-ff-9Fc" secondAttribute="trailing" id="g6q-GY-6RR"/>
                             <constraint firstAttribute="trailing" secondItem="Zmt-yM-7wa" secondAttribute="trailing" constant="20" id="kh8-LD-BMr"/>
-                            <constraint firstItem="PFZ-ff-9Fc" firstAttribute="top" secondItem="eFq-lc-v9v" secondAttribute="bottom" constant="-230" id="oSn-cg-QMp"/>
                             <constraint firstItem="PFZ-ff-9Fc" firstAttribute="leading" secondItem="GeX-7p-AUb" secondAttribute="leading" id="oxz-Mu-ojt"/>
                             <constraint firstItem="uWQ-ga-Qe1" firstAttribute="bottom" secondItem="Zmt-yM-7wa" secondAttribute="bottom" id="riq-fY-WAa"/>
                             <constraint firstItem="PFZ-ff-9Fc" firstAttribute="top" secondItem="GeX-7p-AUb" secondAttribute="top" id="w4J-z3-60v"/>
@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHi-mX-8eM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="1212"/>
+            <point key="canvasLocation" x="290" y="1190"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aUd-4H-beo">

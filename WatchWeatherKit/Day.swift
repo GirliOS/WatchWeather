@@ -2,11 +2,11 @@
 //  Day.swift
 //  WatchWeather
 //
-//  Created by baijf on 8/4/15.
+//  Created by girlios on 8/4/15.
 //  Copyright © 2015 GirliOS. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public enum Day: Int {
     

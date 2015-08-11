@@ -29,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>WatchWeatherFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>WatchWeatherKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -37,6 +42,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>F58405E51B7998E700E3EA08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F5FD71351B7092BD005C64AD</key>
 		<dict>
 			<key>primary</key>
@@ -53,6 +63,11 @@
 			<true/>
 		</dict>
 		<key>F5FD715D1B7092BD005C64AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5FD716C1B7092BD005C64AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
